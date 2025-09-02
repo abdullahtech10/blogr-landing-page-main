@@ -341,9 +341,8 @@ footer p:hover {
     .links {
         position: fixed;
         flex-direction: column;
-        right: -100%;
         top: 0;
-
+        right: -100%;
         background: white;
         min-height: 100vh;
         width: 90%;
@@ -352,6 +351,7 @@ footer p:hover {
         justify-content: start;
         padding: 30px;
         border-radius: 10px;
+        z-index: 100;
     }
 
     .links.active {
@@ -475,17 +475,22 @@ footer p:hover {
         flex-direction: column-reverse;
         text-align: center;
     }
-
+    
     .bg {
         border-radius: 0 3rem 0 3rem;
-        padding-bottom: 3rem;
+        width: 100%;
         position: relative;
-
+        
     }
-
+    
     .art-con {
         flex-direction: column;
         text-align: center;
+        
+    }
+    
+    .art p{
+        padding-bottom: 2rem;
 
     }
 
@@ -499,6 +504,10 @@ footer p:hover {
     .free-con {
         flex-direction: column;
         text-align: center;
+    }
+
+    .free-con img{
+        width: 100%;
     }
 
     footer {
